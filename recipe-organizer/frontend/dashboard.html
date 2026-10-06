@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recipe Organizer - Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>🍴 Recipe Organizer</h1>
+
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main class="dashboard">
+
+        <h2>Welcome to Recipe Organizer 👋</h2>
+
+        <p>
+            Manage your recipes and create your shopping list easily.
+        </p>
+
+        <div class="dashboard-cards">
+
+            <div class="card">
+                <h3>🍲 My Recipes</h3>
+                <p>Add, view, update and delete your recipes.</p>
+                <button onclick="location.href='recipes.html'">
+                    View Recipes
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🛒 Shopping List</h3>
+                <p>Manage ingredients you need to purchase.</p>
+                <button onclick="location.href='shopping-list.html'">
+                    Shopping List
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+        const token = localStorage.getItem("token");
+
+        if (!token) {
+            window.location.href = "index.html";
+        }
+
+        document.getElementById("logoutBtn").addEventListener("click", function () {
+
+            localStorage.removeItem("token");
+
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+</html>

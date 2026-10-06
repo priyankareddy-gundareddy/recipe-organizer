@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Recipe</title>
+
+    <link rel="stylesheet" href="css/add-recipe.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>🍴 Recipe Organizer</h1>
+
+        <button onclick="location.href='recipes.html'">
+            My Recipes
+        </button>
+    </header>
+
+    <main class="container">
+
+        <div class="form-card">
+
+            <h2>Add New Recipe</h2>
+
+            <form id="recipeForm">
+
+                <label>Recipe Title</label>
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter recipe title"
+                    required
+                >
+
+                <label>Category</label>
+                <input
+                    type="text"
+                    id="category"
+                    placeholder="Example: Lunch"
+                    required
+                >
+
+                <label>Description</label>
+                <textarea
+                    id="description"
+                    placeholder="Enter recipe description"
+                    required
+                ></textarea>
+
+                <label>Ingredients</label>
+                <textarea
+                    id="ingredients"
+                    placeholder="Example: Rice, Carrot, Beans, Onion"
+                    required
+                ></textarea>
+
+                <label>Instructions</label>
+                <textarea
+                    id="instructions"
+                    placeholder="Enter cooking instructions"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Add Recipe
+                </button>
+
+                <p id="message"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="js/add-recipe.js"></script>
+
+</body>
+</html>

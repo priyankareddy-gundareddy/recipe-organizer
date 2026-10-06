@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Recipes</title>
+
+    <link rel="stylesheet" href="css/recipes.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1>🍴 My Recipes</h1>
+
+        <div>
+
+            <button onclick="location.href='dashboard.html'">
+                Dashboard
+            </button>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <div class="top-section">
+
+            <h2>Your Recipes</h2>
+
+            <button onclick="location.href='add-recipe.html'">
+                + Add Recipe
+            </button>
+
+        </div>
+
+
+        <!-- CATEGORY FILTER -->
+
+        <div class="filter-section">
+
+            <label for="categoryFilter">
+                Filter by Category:
+            </label>
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Breakfast">
+                    Breakfast
+                </option>
+
+                <option value="Lunch">
+                    Lunch
+                </option>
+
+                <option value="Dinner">
+                    Dinner
+                </option>
+
+                <option value="Snacks">
+                    Snacks
+                </option>
+
+                <option value="Dessert">
+                    Dessert
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- RECIPES -->
+
+        <div id="recipeContainer">
+
+            <p>Loading recipes...</p>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/recipes.js"></script>
+
+</body>
+
+</html>
