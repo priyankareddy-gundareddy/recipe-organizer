@@ -14,7 +14,7 @@ async function loadRecipes() {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/api/recipes",
+            "https://recipe-organizer-pi1n.onrender.com/api/recipes",
             {
                 method: "GET",
 
@@ -51,7 +51,7 @@ async function loadRecipesByCategory(category) {
     try {
 
         const response = await fetch(
-            `http://localhost:8080/api/recipes/category/${encodeURIComponent(category)}`,
+            `https://recipe-organizer-pi1n.onrender.com/api/recipes/category/${encodeURIComponent(category)}`,
             {
                 method: "GET",
 
@@ -210,7 +210,7 @@ async function deleteRecipe(id) {
 
         const response = await fetch(
 
-            `http://localhost:8080/api/recipes/${id}`,
+            `https://recipe-organizer-pi1n.onrender.com/api/recipes/${id}`,
 
             {
                 method: "DELETE",

@@ -19,7 +19,7 @@ document.getElementById("recipeForm").addEventListener("submit", async function 
     try {
 
         const response = await fetch(
-            "http://localhost:8080/api/recipes",
+            "https://recipe-organizer-pi1n.onrender.com/api/recipes",
             {
                 method: "POST",
 

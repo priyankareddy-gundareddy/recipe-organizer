@@ -11,7 +11,7 @@ registerForm.addEventListener("submit", async function (event) {
     try {
 
         const response = await fetch(
-            "http://localhost:8080/api/auth/register",
+            "https://recipe-organizer-pi1n.onrender.com/api/auth/register",
             {
                 method: "POST",
                 headers: {

@@ -20,7 +20,7 @@ async function loadRecipe() {
     try {
 
         const response = await fetch(
-            `http://localhost:8080/api/recipes/${recipeId}`,
+            `https://recipe-organizer-pi1n.onrender.com/api/recipes/${recipeId}`,
             {
                 method: "GET",
                 headers: {
@@ -88,7 +88,7 @@ document.getElementById("editRecipeForm")
         try {
 
             const response = await fetch(
-                `http://localhost:8080/api/recipes/${recipeId}`,
+                `https://recipe-organizer-pi1n.onrender.com/api/recipes/${recipeId}`,
                 {
                     method: "PUT",
 
